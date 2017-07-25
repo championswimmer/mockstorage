@@ -65,10 +65,37 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="mockstorage">mockstorage</h1>
-				<p>A node module to emulate localStorage and/or
-				sessionStorage outside the browser.<br>(A major use case being unit tests)</p>
+				<p>A node module (with full Typescript support) to emulate localStorage
+				and/or sessionStorage outside the browser.<br>(A major use case being unit tests)</p>
 				<p><a href="https://travis-ci.org/championswimmer/mockstorage"><img src="https://travis-ci.org/championswimmer/mockstorage.svg?branch=master" alt="Build Status"></a>
-				<a href="https://codecov.io/gh/championswimmer/mockstorage"><img src="https://codecov.io/gh/championswimmer/mockstorage/branch/master/graph/badge.svg" alt="codecov"></a></p>
+					<a href="https://codecov.io/gh/championswimmer/mockstorage"><img src="https://codecov.io/gh/championswimmer/mockstorage/branch/master/graph/badge.svg" alt="codecov"></a>
+					<a href="https://www.codacy.com/app/championswimmer/mockstorage?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=championswimmer/mockstorage&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/831494601a6747ca85d7ea74514d642c" alt="Codacy Badge"></a>
+					<a href="https://codebeat.co/projects/github-com-championswimmer-mockstorage-master"><img src="https://codebeat.co/badges/1af9063e-301b-47e1-a94a-03d21e73fa83" alt="codebeat badge"></a>
+				<a href="https://codeclimate.com/github/championswimmer/mockstorage"><img src="https://codeclimate.com/github/championswimmer/mockstorage/badges/gpa.svg" alt="Code Climate"></a></p>
+				<h2 id="installation">Installation</h2>
+				<pre><code class="lang-bash">npm install mockstorage
+</code></pre>
+				<p>or</p>
+				<pre><code class="lang-bash">yarn add mockstorage
+</code></pre>
+				<h2 id="usage">Usage</h2>
+				<p>In Javascript</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> MockStorage = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mockstorage'</span>).MockStorage
+
+<span class="hljs-keyword">var</span> myStore = <span class="hljs-keyword">new</span> MockStorage()
+myStore.setItem(<span class="hljs-string">'myKey'</span>, <span class="hljs-string">'some value'</span>)
+<span class="hljs-built_in">console</span>.log(myStore.getItem(<span class="hljs-string">'myKey'</span>)) <span class="hljs-comment">// &gt; 'some value'</span>
+</code></pre>
+				<p>In Typescript</p>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { MockStorage } <span class="hljs-keyword">from</span> <span class="hljs-string">'mockstorage'</span>
+
+<span class="hljs-keyword">const</span> myStore = <span class="hljs-keyword">new</span> MockStorage()
+myStore.setItem(<span class="hljs-string">'myKey'</span>, <span class="hljs-string">'some value'</span>)
+<span class="hljs-built_in">console</span>.log(myStore.getItem(<span class="hljs-string">'myKey'</span>)) <span class="hljs-comment">// &gt; 'some value'</span>
+</code></pre>
+				<h2 id="license">LICENSE</h2>
+				<p>This project is licensed under the MIT license (a copy of which is part of the project)</p>
+				<p>Copyright (c) 2017, Arnav Gupta</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
