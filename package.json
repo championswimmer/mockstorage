@@ -1,6 +1,6 @@
 {
   "name": "mockstorage",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A mock storage to emulate localStorage and sessionStorage in Node.js",
   "main": "dist/index.js",
   "scripts": {
