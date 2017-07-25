@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "8"
+  - "6"
+before_install:
+  - "npm install -g nyc mocha typescript codecov"
+install:
+  - "npm install -D"
+cache:
+  directories:
+    - "node_modules"
+script:
+  - "npm run cover"
+after_success:
+  - "codecov"
