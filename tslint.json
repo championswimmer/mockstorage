@@ -6,7 +6,9 @@
     "jsRules": {},
     "rules": {
         "semicolon": [false],
-        "space-before-function-paren": true
+        "space-before-function-paren": true,
+        "ordered-imports": false,
+        "quotemark": ["single"]
     },
     "rulesDirectory": []
 }
