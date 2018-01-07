@@ -3,6 +3,7 @@
   "version": "0.1.4",
   "description": "A mock storage to emulate localStorage and sessionStorage in Node.js",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "prebuild": "rm -rf dist/*",
     "build": "tsc",
